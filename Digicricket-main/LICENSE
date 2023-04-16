@@ -1,0 +1,16 @@
+                        DIGICRICKET VERSION 1.0 
+                                License 
+
+Digicricket is a game based on hand cricket. This game is made using HTML, javascript and CSS.
+
+What you can do with this software:
+ 1. You can play the game.
+ 2. You can use is for education purpose.
+ 3. You can distribute this software.
+ 4. You can modify the game design and make it your own.
+ 5. You can also use this for commrcial purpose, but you have to give proper credits to original author.
+
+Terms and condition for reproduction, modification, distribution and any other purpose:
+ 1. You can reproduce the game as long as you have to credit the author.
+ 2. You can not remove the line console.log("Made by Vinayak Handa (github.com/vinayakhanda)") from scripts.js file.
+ 3. You can not delete the comment "Made by Vinayak Handa (github.com/vinayakhanda)" from any source code.

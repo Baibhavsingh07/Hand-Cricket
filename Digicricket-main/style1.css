@@ -1,0 +1,46 @@
+/*
+Made by Vinayak Handa
+github.com/vinayakhanda
+*/
+
+#score {
+  font-family: "Courier New", Courier, monospace;
+}
+.player {
+  height: 30cm;
+  width: 35%;
+  border: 1;
+  background-image: linear-gradient(#64e6bb, #9198e5);
+  float: left;
+}
+img {
+  /* padding-left: 120px; */
+  padding-top: 50px;
+}
+button {
+  background-color: aqua;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 20px;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+.cntSpc {
+  height: 30cm;
+  width: 30%;
+  border: 1;
+  background-image: linear-gradient(270deg, #a63f87, #e7e1f8, #a53cf6);
+  float: left;
+}
+.comp {
+  height: 30cm;
+  width: 35%;
+  border: 1;
+  background-image: linear-gradient(#64e6bb, #9198e5);
+  float: left;
+}
+
+#btn1:hover {
+}
