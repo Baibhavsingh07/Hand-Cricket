@@ -1,8 +1,9 @@
 /* Body */
 body {
   background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+  background-image: url("assets/background.jpg");
+  height: 800px;
+  width: 1500px;
   text-align: center;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -24,7 +25,7 @@ body {
 }
 
 .box h3 {
-  font-size: 5.5rem;
+  font-size: 5.5px;
   color: white;
   font-weight: 600;
   transition: 0.5s;
