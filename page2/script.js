@@ -9,7 +9,7 @@ var sts3 = document.getElementById("status3");
 
 function addToScore(val) {
   userChoice = val;
-  compChoice = Math.floor(Math.random() * 6)+1;
+  compChoice = Math.floor(Math.random() * 6) + 1;
   if (userBatting == true) {
     scr += val;
     sts.innerHTML = "You are batting ";
@@ -31,6 +31,9 @@ function addToScore(val) {
     document.getElementById("userChoice").innerHTML = "You : " + userChoice;
     document.getElementById("score").innerHTML = "Your Score : " + scr;
 
+    if (compScr > scr) {
+      compOut();
+    }
     if ((compChoice == userChoice) & (userBatting == false)) {
       compOut();
     }
