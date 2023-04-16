@@ -31,12 +31,15 @@ function addToScore(val) {
     document.getElementById("userChoice").innerHTML = "You : " + userChoice;
     document.getElementById("score").innerHTML = "Your Score : " + scr;
 
-    if (compScr > scr) {
-      compOut();
-    }
+    
     if ((compChoice == userChoice) & (userBatting == false)) {
       compOut();
     }
+    
+    if (compScr > scr) {
+      compOut();
+    }
+    
   }
 }
 
