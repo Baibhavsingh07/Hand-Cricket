@@ -9,7 +9,7 @@ var sts3 = document.getElementById("status3");
 
 function addToScore(val) {
   userChoice = val;
-  compChoice = Math.floor(Math.random() * 6);
+  compChoice = Math.floor(Math.random() * 6) +1;
   if (userBatting == true) {
     scr += val;
     sts.innerHTML = "You are batting ";
