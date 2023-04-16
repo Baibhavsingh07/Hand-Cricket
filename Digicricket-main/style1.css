@@ -1,13 +1,16 @@
-
+.body {
+  text-decoration: solid;
+  color: rgb(255, 255, 255);
+}
 
 #score {
   font-family: "Courier New", Courier, monospace;
+  color: aliceblue;
 }
 .player {
-  height: 30cm;
+  height: 100%;
   width: 35%;
   border: 1;
-  background-image: linear-gradient(#64e6bb, #9198e5);
   float: left;
 }
 img {
@@ -15,7 +18,7 @@ img {
   padding-top: 50px;
 }
 button {
-  background-color: aqua;
+  background-color: white;
   font-size: 40px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -25,19 +28,48 @@ h1 {
   font-family: "Courier New", Courier, monospace;
 }
 .cntSpc {
-  height: 30cm;
+  height: 100%;
   width: 30%;
   border: 1;
-  background-image: linear-gradient(270deg, #a63f87, #e7e1f8, #a53cf6);
   float: left;
+  color: white;
 }
 .comp {
-  height: 30cm;
+  height: 100%;
   width: 35%;
   border: 1;
-  background-image: linear-gradient(#64e6bb, #9198e5);
   float: left;
+  color: white;
 }
 
-#btn1:hover {
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+#play-again {
+  visibility: hidden;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+img{
+  border-radius: 7px;
 }
