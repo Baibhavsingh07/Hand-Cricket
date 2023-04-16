@@ -1,8 +1,13 @@
 /* Body */
 body {
   background-repeat: no-repeat;
+<<<<<<< HEAD
+  height: 100%;
+  width: 100%;
+=======
   height: 800px;
   width: 1500px;
+>>>>>>> 8f76c95a84dd4422468dba11f16938fc15c31294
   text-align: center;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -13,7 +18,7 @@ body {
 /* Box for homepage */
 .box {
   text-align: center;
-  height: fit-content;
+t: fit-content;
   width: fit-content;
   padding: 5rem;
   position: absolute;
@@ -24,7 +29,7 @@ body {
 }
 
 .box h3 {
-  font-size: 5.5px;
+  font-size: 5.5rem;
   color: white;
   font-weight: 600;
   transition: 0.5s;
