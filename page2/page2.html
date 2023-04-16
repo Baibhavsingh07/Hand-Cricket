@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DigiCricket</title>
+    <title>HandCricket</title>
     <link rel="stylesheet" href="style1.css" />
     <link
       rel="stylesheet"
@@ -25,34 +25,45 @@
     />
   </head>
 
-  <body bgcolor="pacifica">
+  <body>
+    <video autoplay loop muted plays-inline class="video">
+      <source src="../assets/page2.mp4" type="video/mp4" />
+    </video>
+
     <center>
-      <h1>HandCricket</h1>
+      <h1><b style="color: rgb(47, 255, 248); font-size: 4rem"> HandCricket </b></h1>
+
     </center>
+    <br><br>
     <div class="player">
       <center>
-        <h1 id="score">Your Score:</h1>
-        <img src="player.jpg" alt="player image " height="200" width="200" />
+        <h1 style="color: rgb(209, 247, 59);" id="score"><em><b>Your Score:</b></em></h1>
+        <img
+          src="../assets/cricket-player-7293770.jpg"
+          alt="player image "
+          height="250"
+          width="200"
+        />
         <br />
         <br />
         <button
           onclick="addToScore(0)"
           id="btn1"
-          class="btn btn-outline-danger btn-lg"
+          class="btn btn-outline-primary btn-info btn-lg"
         >
           0
         </button>
         <button
           onclick="addToScore(1)"
           id="btn2"
-          class="btn btn-outline-danger btn-lg"
+          class="btn btn-outline-primary btn-info btn-lg"
         >
           1
         </button>
         <button
           onclick="addToScore(2)"
           id="btn3"
-          class="btn btn-outline-danger btn-lg"
+          class="btn btn-outline-primary btn-info btn-lg"
         >
           2
         </button>
@@ -61,21 +72,21 @@
         <button
           onclick="addToScore(3)"
           id="btn4"
-          class="btn btn-outline-danger btn-lg"
+          class="btn btn-outline-primary btn-info btn-lg"
         >
           3
         </button>
         <button
           onclick="addToScore(4)"
           id="btn5"
-          class="btn btn-outline-danger btn-lg"
+          class="btn btn-outline-primary btn-info btn-lg"
         >
           4
         </button>
         <button
           onclick="addToScore(5)"
           id="btn6"
-          class="btn btn-outline-danger btn-lg"
+          class="btn btn-outline-primary btn-info btn-lg"
         >
           5
         </button>
@@ -84,8 +95,8 @@
 
     <div class="cntSpc">
       <center>
-        <h1 id="userChoice">You :</h1>
-        <h1 id="compChoice">Computer :</h1>
+        <h1 style="color: rgb(209, 247, 59);" id="userChoice"><em><b>You :</b></em></h1>
+        <h1 style="color: rgb(209, 247, 59);"id="compChoice"><em><b>Computer :</b></em></h1>
         <h1 id="status"></h1>
         <h1 id="status2"></h1>
         <h1 id="status3"></h1>
@@ -94,10 +105,27 @@
 
     <div class="comp">
       <center>
-        <h1 id="compScore">Computers Score :</h1>
-        <img src="comp.jpg" alt="computer" height="200" width="200" />
+        <h1 style="color: rgb(209, 247, 59);" id="compScore"><em><b> Computers Score :</b></em></h1>
+        <img
+          src="../assets/497-4974591_cartoon-clipart-computer-hd-png-download.png"
+          alt="computer"
+          height="250"
+          width="200"
+        />
       </center>
     </div>
+
+    <button
+      style="font-size: x-large"
+      class="btn btn-danger btn-lg animated infinite bounce heartBeat delay-2s"
+      id="play-again"
+    >
+      <a
+        style="color: rgb(48, 236, 111); text-decoration: none"
+        href="page2.html"
+        >Play Again</a
+      >
+    </button>
 
     <script src="script.js"></script>
     <script

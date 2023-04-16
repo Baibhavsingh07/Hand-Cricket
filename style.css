@@ -1,13 +1,8 @@
 /* Body */
 body {
   background-repeat: no-repeat;
-<<<<<<< HEAD
   height: 100%;
   width: 100%;
-=======
-  height: 800px;
-  width: 1500px;
->>>>>>> 8f76c95a84dd4422468dba11f16938fc15c31294
   text-align: center;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -18,25 +13,25 @@ body {
 /* Box for homepage */
 .box {
   text-align: center;
-t: fit-content;
+  height: fit-content;
   width: fit-content;
-  padding: 5rem;
+  padding: 50px;
   position: absolute;
-  top: 20%;
-  left: 2%;
+  top: 200px;
+  left: 30px;
   border-radius: 20px;
   opacity: 75%;
 }
 
 .box h3 {
-  font-size: 5.5rem;
+  font-size: 90px;
   color: white;
   font-weight: 600;
   transition: 0.5s;
 }
 
 .box h3:hover {
-  -webkit-text-stroke: 0.1rem white;
+  -webkit-text-stroke: 2px white;
   color: transparent;
 }
 
