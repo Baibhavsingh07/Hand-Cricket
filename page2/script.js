@@ -9,15 +9,15 @@ var sts3 = document.getElementById("status3");
 
 function addToScore(val) {
   userChoice = val;
-  compChoice = Math.floor(Math.random() * 6) +1;
+  compChoice = Math.floor(Math.random() * 6) + 1;
   if (userBatting == true) {
     scr += val;
     sts.innerHTML = "You are batting ";
-    document.getElementById("score").innerHTML = scr;
-    document.getElementById("userChoice").innerHTML = "You : " + userChoice;
-    document.getElementById("score").innerHTML = "Your Score : " + scr;
+    document.getElementById("score").innerText = scr;
+    document.getElementById("userChoice").innerText = "You : " + userChoice;
+    document.getElementById("score").innerText = "Your Score : " + scr;
 
-    document.getElementById("compChoice").innerHTML = "Computer: " + compChoice;
+    document.getElementById("compChoice").innerText = "Computer: " + compChoice;
 
     if (userChoice == compChoice) {
       playerOut();
@@ -25,11 +25,11 @@ function addToScore(val) {
   }
   if (userBatting == false && compBatting == true) {
     compScr += compChoice;
-    document.getElementById("compScore").innerHTML =
+    document.getElementById("compScore").innerText =
       "Computer score: " + compScr;
-    document.getElementById("compChoice").innerHTML = "Computer: " + compChoice;
-    document.getElementById("userChoice").innerHTML = "You : " + userChoice;
-    document.getElementById("score").innerHTML = "Your Score : " + scr;
+    document.getElementById("compChoice").innerText = "Computer: " + compChoice;
+    document.getElementById("userChoice").innerText = "You : " + userChoice;
+    document.getElementById("score").innerText = "Your Score : " + scr;
 
     if ((compChoice == userChoice) & (userBatting == false)) {
       compOut();
@@ -45,7 +45,6 @@ function playerOut() {
   const myTimeout = setTimeout(myMsg, 3000);
   function myMsg() {
     sts.innerHTML = "Computer is Batting 🏏";
-    sts.css("fontWeight","bold");
   }
 
   document.getElementById("userChoice").innerHTML = "";
@@ -62,14 +61,12 @@ function compOut() {
 function userWIn() {
   sts.innerHTML = "";
   sts2.innerHTML = "You won 🎆🎊🎊🎊!! <br> ";
-  sts2.css("fontWeight","bold");
   closeAll();
 }
 
 function compWin() {
   sts.innerHTML = "";
   sts3.innerHTML = "Computer won and you lost 😥 <br> ";
-  sts3.css("fontWeight","bold");
   closeAll();
 }
 // So that the buttons are Hidden after the game ends
