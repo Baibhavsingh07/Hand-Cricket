@@ -45,6 +45,7 @@ function playerOut() {
   const myTimeout = setTimeout(myMsg, 3000);
   function myMsg() {
     sts.innerHTML = "Computer is Batting 🏏";
+    sts.css("fontWeight","bold");
   }
 
   document.getElementById("userChoice").innerHTML = "";
@@ -61,12 +62,14 @@ function compOut() {
 function userWIn() {
   sts.innerHTML = "";
   sts2.innerHTML = "You won 🎆🎊🎊🎊!! <br> ";
+  sts2.css("fontWeight","bold");
   closeAll();
 }
 
 function compWin() {
   sts.innerHTML = "";
   sts3.innerHTML = "Computer won and you lost 😥 <br> ";
+  sts3.css("fontWeight","bold");
   closeAll();
 }
 // So that the buttons are Hidden after the game ends
