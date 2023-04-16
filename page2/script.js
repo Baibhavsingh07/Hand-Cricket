@@ -9,15 +9,15 @@ var sts3 = document.getElementById("status3");
 
 function addToScore(val) {
   userChoice = val;
-  compChoice = Math.floor(Math.random() * 6) + 1;
+  compChoice = Math.floor(Math.random() * 6)+1;
   if (userBatting == true) {
     scr += val;
     sts.innerHTML = "You are batting ";
-    document.getElementById("score").innerText = scr;
-    document.getElementById("userChoice").innerText = "You : " + userChoice;
-    document.getElementById("score").innerText = "Your Score : " + scr;
+    document.getElementById("score").innerHTML = scr;
+    document.getElementById("userChoice").innerHTML = "You : " + userChoice;
+    document.getElementById("score").innerHTML = "Your Score : " + scr;
 
-    document.getElementById("compChoice").innerText = "Computer: " + compChoice;
+    document.getElementById("compChoice").innerHTML = "Computer: " + compChoice;
 
     if (userChoice == compChoice) {
       playerOut();
@@ -25,11 +25,11 @@ function addToScore(val) {
   }
   if (userBatting == false && compBatting == true) {
     compScr += compChoice;
-    document.getElementById("compScore").innerText =
+    document.getElementById("compScore").innerHTML =
       "Computer score: " + compScr;
-    document.getElementById("compChoice").innerText = "Computer: " + compChoice;
-    document.getElementById("userChoice").innerText = "You : " + userChoice;
-    document.getElementById("score").innerText = "Your Score : " + scr;
+    document.getElementById("compChoice").innerHTML = "Computer: " + compChoice;
+    document.getElementById("userChoice").innerHTML = "You : " + userChoice;
+    document.getElementById("score").innerHTML = "Your Score : " + scr;
 
     if ((compChoice == userChoice) & (userBatting == false)) {
       compOut();
