@@ -1,9 +1,8 @@
 /* Body */
 body {
   background-repeat: no-repeat;
-  background-image: url("assets/background.jpg");
-  height: 800px;
-  width: 1500px;
+  height: 100%;
+  width: 100%;
   text-align: center;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -16,23 +15,23 @@ body {
   text-align: center;
   height: fit-content;
   width: fit-content;
-  padding: 50px;
+  padding: 5rem;
   position: absolute;
-  top: 200px;
-  left: 30px;
+  top: 20%;
+  left: 2%;
   border-radius: 20px;
   opacity: 75%;
 }
 
 .box h3 {
-  font-size: 90px;
+  font-size: 5.5rem;
   color: white;
   font-weight: 600;
   transition: 0.5s;
 }
 
 .box h3:hover {
-  -webkit-text-stroke: 2px white;
+  -webkit-text-stroke: 0.1rem white;
   color: transparent;
 }
 
