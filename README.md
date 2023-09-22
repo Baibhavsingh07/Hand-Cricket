@@ -5,7 +5,7 @@ Step up to the crease and experience the thrill of Hand Cricket like never befor
 
 ## Preview
 
-![Alt text](image.png)
+![Alt text](image.jpg)
 
 ## Features
 
